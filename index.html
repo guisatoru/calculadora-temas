@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="tema-roxo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora com temas</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <div id="calculadora">
+      <input id="display" readonly/>
+      <div id="botoes">
+        <button onclick="adicionarNoDisplay('+')">+</button>
+        <button onclick="adicionarNoDisplay('7')">7</button>
+        <button onclick="adicionarNoDisplay('8')">8</button>
+        <button onclick="adicionarNoDisplay('9')">9</button>
+        <button onclick="adicionarNoDisplay('-')">-</button>
+        <button onclick="adicionarNoDisplay('4')">4</button>
+        <button onclick="adicionarNoDisplay('5')">5</button>
+        <button onclick="adicionarNoDisplay('6')">6</button>
+        <button onclick="adicionarNoDisplay('*')">*</button>
+        <button onclick="adicionarNoDisplay('1')">1</button>
+        <button onclick="adicionarNoDisplay('2')">2</button>
+        <button onclick="adicionarNoDisplay('3')">3</button>
+        <button onclick="adicionarNoDisplay('/')">/</button>
+        <button onclick="adicionarNoDisplay('0')">0</button>
+        <button onclick="adicionarNoDisplay('.')">.</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="limparDisplay()">C</button>
+      </div>
+    </div>
+    <div id="temas">
+        <button class="tema-claro"></button>
+        <button class="tema-escuro"></button>
+        <button class="tema-roxo"></button>
+      </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
